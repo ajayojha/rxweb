@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
-    "build:validators": "ng-packagr -p ./packages/reactive-form-validators/package.json"
+    "build:validators": "ng-packagr -p ./packages/reactive-form-validators/package.json",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@angular-devkit/build-ng-packagr": "^0.8.3",
@@ -27,7 +29,8 @@
     "ng-packagr": "^1.4.1",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.2.1",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.8.4",
@@ -49,5 +52,6 @@
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "~3.1.6"
-  }
+  },
+  "snyk": true
 }
