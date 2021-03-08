@@ -12,7 +12,7 @@
     "build:validators": "ng-packagr -p ./packages/reactive-form-validators/package.json"
   },
   "dependencies": {
-    "@angular-devkit/build-ng-packagr": "^0.8.3",
+    "@angular-devkit/build-ng-packagr": "^0.800.0",
     "@angular/animations": "^7.1.0",
     "@angular/common": "^7.1.0",
     "@angular/compiler": "^7.1.0",
